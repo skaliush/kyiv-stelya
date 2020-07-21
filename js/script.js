@@ -13,4 +13,16 @@ $(document).ready(function() {
 		isOverlayClickClosing: true, // true, если надо закрывать окно при клике по любой области
 		isEscClosing: true, 
 	});
+	$(window).resize(unlightzoom);
+	unlightzoom();
 });
+function unlightzoom(event) {
+	if ($(window).width() <= 768 ) {
+		$('.lightzoom').click(function(event) {
+			event.preventDefault();
+			let path = this.href;
+			location.href = path;
+			return false;
+		});
+	}
+}

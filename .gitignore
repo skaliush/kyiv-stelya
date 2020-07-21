@@ -3,6 +3,7 @@
 # Edit at https://www.toptal.com/developers/gitignore?templates=windows,sublimetext,prepros,git
 
 scss/*
+libs/*
 
 ### Git ###
 # Created by git for backups. To disable backups in Git:

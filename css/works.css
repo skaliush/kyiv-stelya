@@ -65,20 +65,26 @@ textarea {
 }
 
 .btn {
+	position: relative;
 	font-size: 24px;
 	line-height: 24px;
 	text-align: center;
 	letter-spacing: 0.05em;
 	text-transform: uppercase;
 	padding: 14px 45px;
-	background-color: #FFCC16;
-	color: #000000;
 	font-family: "Muller-Bold";
 	border: none;
-	transition: background-color 0.3s, color 0.3s;
+	transition: background-color 0.3s, color 0.3s, transform 0.1s;
+	background-color: #FF2C2C;
+	color: #FFFFFF;
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
 }
 .btn:hover {
 	background-color: #FFFFFF;
+	color: #000000;
+}
+.btn:active {
+	transform: translateY(2px);
 }
 
 .bold {
@@ -87,6 +93,36 @@ textarea {
 
 .h-100 {
 	height: 100%;
+}
+
+.box {
+	position: relative;
+	display: inline-block;
+	box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.7);
+	background-image: url("../img/main/case-bg.png");
+	background-repeat: repeat;
+	background-color: #f0f0f0;
+}
+.box-header {
+	background-color: #FFCC16;
+	padding: 15px 0 1px;
+}
+.box-title {
+	text-align: center;
+	font-family: "Muller-XBold";
+	font-size: 32px;
+	line-height: 1;
+	letter-spacing: 0.2em;
+	text-transform: uppercase;
+}
+.box-body {
+	padding: 20px;
+}
+.box-text {
+	text-align: center;
+	font-size: 18px;
+	line-height: 24px;
+	letter-spacing: 0.05em;
 }
 
 .main-menu-wrap {
@@ -145,13 +181,6 @@ textarea {
 	margin-right: auto;
 	margin-bottom: 30px;
 }
-.works-btn {
-	background-color: #FF2C2C;
-	color: #FFFFFF;
-}
-.works-btn:hover {
-	color: #000000;
-}
 
 .case-content {
 	padding-top: 45px;
@@ -159,28 +188,7 @@ textarea {
 	justify-content: space-between;
 }
 .case-box {
-	position: relative;
-	display: inline-block;
 	margin-bottom: 35px;
-	box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.7);
-	background-image: url("../img/works/case-bg.png");
-	background-size: cover;
-	background-color: #f0f0f0;
-}
-.case-box-header {
-	background-color: #FFCC16;
-	padding: 15px 0 1px;
-}
-.case-box-title {
-	text-align: center;
-	font-family: "Muller-XBold";
-	font-size: 32px;
-	line-height: 1;
-	letter-spacing: 0.2em;
-	text-transform: uppercase;
-}
-.case-box-body {
-	padding: 20px;
 }
 .case-box-img {
 	width: 100%;
@@ -189,12 +197,6 @@ textarea {
 .case-box-img-wrap {
 	max-height: 300px;
 	margin-bottom: 22px;
-}
-.case-box-text {
-	text-align: center;
-	font-size: 18px;
-	line-height: 24px;
-	letter-spacing: 0.05em;
 }
 .case-box-price {
 	background-color: #FFCC16;
@@ -249,10 +251,22 @@ textarea {
 	.absolute-image {
 		display: none;
 	}
+
+	.btn {
+		font-size: 22px;
+	}
 }
 @media (max-width: 991.9px) {
 	.section-title {
 		font-size: 38px;
+	}
+
+	.box-title {
+		font-size: 30px;
+	}
+
+	.btn {
+		font-size: 17px;
 	}
 }
 @media (max-width: 767.9px) {
@@ -263,6 +277,20 @@ textarea {
 	.btn {
 		padding-top: 10px;
 		padding-bottom: 10px;
+		font-size: 16px;
+	}
+
+	.box-title {
+		font-size: 28px;
+	}
+	.box-text {
+		font-size: 16px;
+	}
+	.box-price-title {
+		font-size: 18px;
+	}
+	.box-price-value {
+		font-size: 28px;
 	}
 }
 @media (max-width: 575.9px) {
@@ -270,11 +298,30 @@ textarea {
 		font-size: 28px;
 		letter-spacing: 0.25em;
 	}
+
+	.box-title {
+		font-size: 24px;
+	}
+	.box-text {
+		font-size: 14px;
+	}
 }
 @media (max-width: 424.9px) {
 	.section-title {
 		font-size: 22px;
 		letter-spacing: 0.2em;
+	}
+
+	.box-title {
+		font-size: 20px;
+	}
+	.box-text {
+		font-size: 12px;
+		line-height: 1.7;
+	}
+
+	.btn {
+		font-size: 14px;
 	}
 }
 @media (max-width: 1199.9px) {
@@ -284,9 +331,6 @@ textarea {
 	}
 	.works-subtitle {
 		font-size: 20px;
-	}
-	.works-btn {
-		font-size: 22px;
 	}
 
 	.case-half {
@@ -300,9 +344,6 @@ textarea {
 	}
 	.works-subtitle {
 		font-size: 17px;
-	}
-	.works-btn {
-		font-size: 18px;
 	}
 
 	.case-content {
@@ -323,16 +364,7 @@ textarea {
 		font-size: 14px;
 		line-height: 1.65;
 	}
-	.works-btn {
-		font-size: 16px;
-	}
 
-	.case-box-title {
-		font-size: 28px;
-	}
-	.case-box-text {
-		font-size: 16px;
-	}
 	.case-box-price-title {
 		font-size: 18px;
 	}
@@ -350,16 +382,7 @@ textarea {
 	.works-subtitle {
 		font-size: 13px;
 	}
-	.works-btn {
-		font-size: 15px;
-	}
 
-	.case-box-title {
-		font-size: 24px;
-	}
-	.case-box-text {
-		font-size: 14px;
-	}
 	.case-box-price-title {
 		font-size: 16px;
 	}
@@ -382,13 +405,6 @@ textarea {
 		font-size: 14px;
 	}
 
-	.case-box-title {
-		font-size: 20px;
-	}
-	.case-box-text {
-		font-size: 12px;
-		line-height: 1.7;
-	}
 	.case-box-price-title {
 		font-size: 14px;
 	}

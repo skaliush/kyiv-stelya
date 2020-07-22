@@ -8,11 +8,14 @@ $(document).ready(function() {
 		}
 		return false;
 	});
-	$('.lightzoom').lightzoom({
-		overlayOpacity: '0.7', // прозрачность фона
-		isOverlayClickClosing: true, // true, если надо закрывать окно при клике по любой области
-		isEscClosing: true, 
-	});
+	let $lz_links = $('.lightzoom');
+	if ($lz_links.lightzoom) {
+		$lz_links.lightzoom({
+			overlayOpacity: '0.7', // прозрачность фона
+			isOverlayClickClosing: true, // true, если надо закрывать окно при клике по любой области
+			isEscClosing: true, 
+		});
+	}
 	$(window).resize(unlightzoom);
 	unlightzoom();
 });

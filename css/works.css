@@ -19,6 +19,10 @@
 	font-weight: 900;
 	font-style: normal;
 }
+html {
+	font-size: 10px;
+}
+
 body {
 	font-family: "Muller-Reg";
 	font-size: 16px;
@@ -104,8 +108,9 @@ textarea {
 	background-color: #f0f0f0;
 }
 .box-header {
-	background-color: #FFCC16;
 	padding: 15px 0 1px;
+	background-color: #FFCC16;
+	mix-blend-mode: multiply;
 }
 .box-title {
 	text-align: center;
@@ -136,8 +141,7 @@ textarea {
 
 .absolute-image {
 	position: absolute;
-	top: 0;
-	left: 0;
+	z-index: 10;
 }
 
 .works {

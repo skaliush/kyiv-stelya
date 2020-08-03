@@ -40,6 +40,7 @@ a {
 }
 a:hover {
 	text-decoration: none;
+	color: #FFCC16;
 }
 
 input:focus, button:focus, a:focus, textarea:focus {
@@ -51,6 +52,10 @@ textarea {
 }
 
 .slick-active:focus {
+	outline: none;
+}
+
+.slick-slider div {
 	outline: none;
 }
 
@@ -145,6 +150,298 @@ textarea {
 .absolute-image {
 	position: absolute;
 	z-index: 10;
+}
+
+.request {
+	padding: 8rem 0;
+	position: relative;
+}
+@media (max-width: 992px) {
+	.request {
+		padding: 2rem 0 5rem 0;
+	}
+}
+.request-box {
+	display: block;
+}
+.request-box-title {
+	width: 48%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	letter-spacing: 0.1em;
+	font-size: 18px;
+	font-family: "Muller-Reg";
+	text-transform: none;
+	line-height: 1.5;
+}
+.request-card {
+	width: 100%;
+	text-align: center;
+	background-size: cover;
+	box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.7);
+}
+.request-card-header {
+	width: 100%;
+	padding: 2rem 0;
+	background: #FFCC16;
+	text-align: center;
+	mix-blend-mode: multiply;
+}
+@media (max-width: 576px) {
+	.request-card-header {
+		font-size: 14px;
+	}
+}
+@media (max-width: 425px) {
+	.request-card-header {
+		font-size: 10px;
+	}
+}
+.request-form {
+	width: 100%;
+	padding: 50px 0;
+}
+.request-form-input {
+	color: #000;
+	font-size: 2.4rem;
+	padding: 1.5rem 5rem;
+	border: none;
+	display: block;
+	margin: 0 auto 4rem auto;
+	width: 50%;
+	box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.7);
+}
+.request-form-input::placeholder {
+	color: #656;
+}
+@media (max-width: 992px) {
+	.request-form-input {
+		width: 90%;
+		font-size: 20px;
+	}
+}
+@media (max-width: 576px) {
+	.request-form-input {
+		font-size: 1.8rem;
+		padding: 1rem 5rem;
+		margin: 0 auto 2rem auto;
+	}
+}
+@media (max-width: 425px) {
+	.request-form-input {
+		font-size: 1.4rem;
+	}
+}
+.request-form-btn {
+	width: 50%;
+	margin-left: 25%;
+}
+
+#notebook {
+	width: 30rem;
+	top: 2rem;
+	right: 0;
+	z-index: 2;
+}
+
+#man-2 {
+	width: 40rem;
+	bottom: -2.7rem;
+	left: 0;
+	z-index: 1;
+}
+@media (max-width: 1200px) {
+	#man-2 {
+		width: 32rem;
+		bottom: -2.1rem;
+	}
+}
+
+.footer {
+	color: #fff;
+	background: #000;
+}
+.footer-in {
+	padding: 3rem 0;
+	display: flex;
+	justify-content: space-between;
+}
+@media (max-width: 992px) {
+	.footer-in {
+		flex-direction: column;
+	}
+}
+.footer .menu-block {
+	display: inline-block;
+	text-align: center;
+}
+.footer .menu-block .link-block {
+	display: inline-block;
+	padding: 0 1rem;
+}
+@media (max-width: 992px) {
+	.footer .menu-block .link-block {
+		display: block;
+		padding: 0;
+	}
+}
+@media (max-width: 992px) {
+	.footer .menu-block-5 {
+		order: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}
+@media (max-width: 992px) {
+	.footer .menu-block-1 {
+		order: 1;
+	}
+}
+@media (max-width: 992px) {
+	.footer .menu-block-2 {
+		order: 2;
+	}
+}
+@media (max-width: 992px) {
+	.footer .menu-block-3 {
+		order: 3;
+	}
+}
+@media (max-width: 992px) {
+	.footer .menu-block-4 {
+		order: 4;
+	}
+}
+.footer .menu-block .phones {
+	margin-top: 6.8rem;
+}
+@media (max-width: 992px) {
+	.footer .menu-block .phones {
+		margin: 0;
+		display: inline-block;
+	}
+}
+.footer .menu-block a {
+	font-weight: 300;
+	display: inline-block;
+	font-size: 1.4rem;
+	margin: 0.5rem 0;
+}
+@media (max-width: 992px) {
+	.footer .menu-block a {
+		font-size: 2.4rem;
+	}
+}
+@media (max-width: 768px) {
+	.footer .menu-block a {
+		font-size: 1.8rem;
+	}
+}
+@media (max-width: 425px) {
+	.footer .menu-block a {
+		font-size: 1.2rem;
+	}
+}
+.footer .menu-block-header {
+	margin-bottom: 1rem;
+	color: #fff;
+	font-size: 1.5rem;
+	text-transform: uppercase;
+}
+.footer .menu-block-header a {
+	font-size: 1.5rem !important;
+	margin: 0;
+	font-weight: normal;
+}
+@media (max-width: 1200px) {
+	.footer .menu-block-header a {
+		font-size: 1.2rem !important;
+	}
+}
+@media (max-width: 992px) {
+	.footer .menu-block-header a {
+		font-size: 3.6rem !important;
+	}
+}
+@media (max-width: 768px) {
+	.footer .menu-block-header a {
+		font-size: 3rem !important;
+	}
+}
+@media (max-width: 425px) {
+	.footer .menu-block-header a {
+		font-size: 2.4rem !important;
+	}
+}
+@media (max-width: 1200px) {
+	.footer .menu-block-header {
+		font-size: 1.2rem;
+	}
+}
+@media (max-width: 992px) {
+	.footer .menu-block-header {
+		font-size: 3.6rem;
+	}
+}
+@media (max-width: 768px) {
+	.footer .menu-block-header {
+		font-size: 3rem;
+	}
+}
+@media (max-width: 425px) {
+	.footer .menu-block-header {
+		font-size: 2.4rem;
+	}
+}
+.footer .menu-block-header::after {
+	margin: 0 auto;
+	content: "";
+	display: block;
+	height: 1px;
+	width: 14rem;
+	background: #FFCC16;
+}
+@media (max-width: 1200px) {
+	.footer .menu-block-header::after {
+		width: 12rem;
+	}
+}
+@media (max-width: 992px) {
+	.footer .menu-block-header::after {
+		width: 30rem;
+	}
+}
+@media (max-width: 425px) {
+	.footer .menu-block-header::after {
+		width: 25rem;
+	}
+}
+.footer .logo {
+	max-width: 15rem;
+}
+@media (max-width: 992px) {
+	.footer .logo {
+		margin-right: 2rem;
+		max-width: 40rem;
+	}
+}
+@media (max-width: 768px) {
+	.footer .logo {
+		max-width: 30rem;
+	}
+}
+@media (max-width: 576px) {
+	.footer .logo {
+		max-width: 18rem;
+	}
+}
+@media (max-width: 425px) {
+	.footer .logo {
+		max-width: 16rem;
+		margin-right: 0.5rem;
+	}
 }
 
 .works {
@@ -262,6 +559,10 @@ textarea {
 	.btn {
 		font-size: 22px;
 	}
+
+	.request-box-title {
+		width: 55%;
+	}
 }
 @media (max-width: 991.9px) {
 	.section-title {
@@ -274,6 +575,15 @@ textarea {
 
 	.btn {
 		font-size: 17px;
+	}
+
+	.request-box-title {
+		font-size: 18px;
+		width: 70%;
+	}
+	.request-form-btn {
+		width: 90%;
+		margin-left: 5%;
 	}
 }
 @media (max-width: 767.9px) {
@@ -299,6 +609,11 @@ textarea {
 	.box-price-value {
 		font-size: 28px;
 	}
+
+	.request-box-title {
+		width: 85%;
+		font-size: 16px;
+	}
 }
 @media (max-width: 575.9px) {
 	.section-title {
@@ -311,6 +626,18 @@ textarea {
 	}
 	.box-text {
 		font-size: 16px;
+	}
+
+	.request-box-title {
+		width: 92%;
+		font-size: 14px;
+	}
+	.request-form-input {
+		width: 100%;
+	}
+	.request-form-btn {
+		width: 100%;
+		margin-left: 0;
 	}
 }
 @media (max-width: 424.9px) {
@@ -329,6 +656,10 @@ textarea {
 
 	.btn {
 		font-size: 14px;
+	}
+
+	.request-box-title {
+		font-size: 13px;
 	}
 }
 @media (max-width: 1199.9px) {

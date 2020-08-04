@@ -1,6 +1,6 @@
 const form_url = "telegram.php"
 
-function ajax(data, success_fuc) {
+function ajax(data, success_fuc = false) {
     $.ajax({
         type: "POST",
         url: form_url,
@@ -9,7 +9,9 @@ function ajax(data, success_fuc) {
             if (result !== "success") {
                 alert("Ошибка отправки формы!")
             }
-            success_fuc()
+            if (success_fuc) {
+                success_fuc()
+            }
         },
         error: function () {
             alert("Ошибка отправки формы!")
@@ -64,7 +66,7 @@ $(document).ready(function () {
     }
 
     function validate_square() {
-        return (parseInt(data.square) > 0 && parseInt(data.square) <= 50)
+        return (parseInt(data.square) > 5 && parseInt(data.square) <= 50)
     }
 
     function validate_type() {
@@ -198,7 +200,7 @@ $(document).ready(function () {
         if (type > 0 && type <= 8 && !is_modal_active) {
             document.getElementById("ceiling-type-name").innerText = types[type - 1]
             $(".modal-window-bg").fadeIn()
-            document.querySelector("body").style.overflow = "hidden"
+            document.querySelector("body").style.overflowY = "hidden"
             is_modal_active = true
             current_type = types[type - 1]
         }
@@ -206,9 +208,10 @@ $(document).ready(function () {
 
     function hide_modal() {
         if (is_modal_active) {
-            document.getElementById("ceiling-type-name").innerText = ""
-            $(".modal-window-bg").fadeOut()
-            document.querySelector("body").style.overflow = "visible"
+            $(".modal-window-bg").fadeOut(400, () => {
+                document.getElementById("ceiling-type-name").innerText = ""
+            })
+            document.querySelector("body").style.overflowY = "visible"
             is_modal_active = false
             current_type = ""
             document.getElementById("name-modal").value = ""

@@ -16,6 +16,7 @@ $(document).ready(function() {
 			isEscClosing: true, 
 		});
 	}
+	$("#main-form-phone").inputmask({"mask": "+38 (999) 999-9999"});
 	$(window).resize(unlightzoom);
 	unlightzoom();
 });

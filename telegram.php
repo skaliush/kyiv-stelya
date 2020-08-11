@@ -11,8 +11,8 @@ if (!(isset($_SERVER['HTTP_X_REQUESTED_WITH']) && $_SERVER['HTTP_X_REQUESTED_WIT
     redirect();
 }
 
-$token = "1302291134:AAHbdm4hn8gAweH5rztvYgCdN0z0BrdvT40";
-$chat_id = "-335500386";
+$token = "1106782743:AAHzh2chFinxwcHsS1ZAlsqEa4Gk4ZDUDL8";
+$chat_id = "472342732";
 
 if (!isset($_POST["type"])) {
     redirect();
@@ -28,7 +28,7 @@ switch ($type) {
         $name = htmlspecialchars(trim($_POST["name"]));
         $ceiling_type = htmlspecialchars(trim($_POST["ceiling_type"]));
         $phone = htmlspecialchars(trim($_POST["phone"]));
-        $txt .= "<b>Тип формы:</b> модальное окно" . "\n";
+        $txt .= "<b>Тип формы:</b> конкретный потолок" . "\n";
         $txt .= "<b>Имя:</b> {$name}" . "\n";
         $txt .= "<b>Тип потолка:</b> {$ceiling_type}" . "\n";
         $txt .= "<b>Телефон:</b> {$phone}" . "\n";
@@ -45,7 +45,7 @@ switch ($type) {
         $sq = htmlspecialchars(trim($_POST["square"]));
         $ceiling_type = intval($_POST["ceiling_type"]) - 1;
         $txt .= "<b>Тип формы:</b> калькулятор" . "\n";
-        $txt .= "<b>Площадь:</b> {}" . "\n";
+        $txt .= "<b>Площадь:</b> {$sq}кв.м." . "\n";
         $txt .= "<b>Тип потолка:</b> {$ceiling_types[$ceiling_type]}" . "\n";
         $ex_el = "";
         for ($i = 0; $i < count($_POST["extra_elements"]); $i++) {

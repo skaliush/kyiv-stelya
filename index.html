@@ -670,7 +670,7 @@
                 <br>клиентов после начала работы с нами.
             </div>
             <form action="">
-                <input placeholder="Ваше имя" type="text" id="main-form-name">
+                <input autocomplete="off" placeholder="Ваше имя" type="text" id="main-form-name">
                 <input placeholder="Ваш телефон" type="tel" id="main-form-phone">
                 <button id="send-request" type="submit">Оставить заявку</button>
             </form>
@@ -737,10 +737,25 @@
         <div class="modal-window-content">
             <img src="img/index/request/man.png" alt="" class="modal-window-man">
             <form action="">
-                <input id="name-modal" placeholder="Ваше имя" type="text" required>
-                <input id="phone-modal" placeholder="Ваш телефон" type="tel" required>
+                <input autocomplete="off" id="name-modal" placeholder="Ваше имя" type="text" required>
+                <input autocomplete="off" id="phone-modal" placeholder="Ваш телефон" type="tel" required>
                 <button id="send-modal" type="submit">Оставить заявку</button>
             </form>
+        </div>
+    </div>
+</div>
+
+<div class="popup">
+    <div class="popup-inner">
+        <div class="popup-box">
+            <div class="popup-header">
+                <h4 class="popup-title">Спасибо за заявку!</h4>
+                <span class="popup-cross popup-close">&times;</span>
+            </div>
+            <div class="popup-body">
+                <p class="popup-text">Мы свяжемся с вами в ближайшее время.</p>
+                <button class="popup-btn popup-close">Хорошо</button>
+            </div>
         </div>
     </div>
 </div>

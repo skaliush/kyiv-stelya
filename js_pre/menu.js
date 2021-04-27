@@ -50,8 +50,7 @@ $(".main-arrows").on("click", function () {
     }
 })
 
-let // header_desktop = $('.main-header-desktop'),
-    header_mobile = $('.main-header-mobile'),
+let header_mobile = $('.main-header-mobile'),
     logo = $(".logo-mobile"),
     scrollPrev = 0;
 

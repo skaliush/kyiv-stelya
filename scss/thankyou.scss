@@ -1,0 +1,38 @@
+@import "style";
+
+.thank {
+	padding-top: 60px;
+	&-section-title {
+		padding-bottom: 3px;	
+	}
+	&-backlink {
+		margin-bottom: 22px;
+		color: #666;
+	}
+	&-box {
+		margin-top: 25px;
+		&-text {
+			font-size: 20px;
+		}
+	}
+	&-info {
+		margin-top: 10px;
+		text-align: center;
+	}
+	&-link {
+		color: #0645AD;
+		text-decoration: underline;
+	}
+	&-image {
+		&-wrap {
+			margin-bottom: 30px;
+			text-align: center;
+		}
+	}
+	&-contact {
+		padding-top: 10px;
+		padding-bottom: 50px;
+	}
+}
+
+@import "style_media";

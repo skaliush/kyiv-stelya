@@ -3,9 +3,7 @@
 # Edit at https://www.toptal.com/developers/gitignore?templates=windows,sublimetext,prepros,git
 
 scss/*
-libs/*
 js_pre/*
-telegram.php
 .idea/
 
 ### Git ###
